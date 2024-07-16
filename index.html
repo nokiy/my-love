@@ -1,181 +1,393 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.6">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谁是世界上最好看的女生？</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        #answerInput {
+            width: calc(100% - 2rem);
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        #answerInput:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        #revealButton {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #revealButton:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        #confettiCanvas {
+            position: absolute;
+            top: 0;
+            left:​⬤<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谁是世界上最好看的女生？</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        #answerInput {
+            width: calc(100% - 2rem);
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        #answerInput:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        #revealButton {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #revealButton:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        #confettiCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="zh"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;谁是世界上最好看的女生？&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body, html {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Helvetica Neue', Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 30px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#answerInput {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: calc(100% - 2rem);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #e0e0e0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: border-color 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#answerInput:focus {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#revealButton {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #3498db;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#revealButton:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #2980b9;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.05);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>#confettiCanvas {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;canvas id="confettiCanvas"&gt;&lt;/canvas&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;谁是世界上最好看的女生？&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="answerInput" placeholder="答案将在这里显示" readonly&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="revealButton"&gt;揭晓答案&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const answerInput = document.getElementById('answerInput');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const revealButton = document.getElementById('revealButton');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const confettiCanvas = document.getElementById('confettiCanvas');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const ctx = confettiCanvas.getContext('2d');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function resizeCanvas() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>confettiCanvas.width = confettiCanvas.offsetWidth;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>confettiCanvas.height = confettiCanvas.offsetHeight;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>resizeCanvas();</p>
-<p class="p1"><span class="Apple-converted-space">        </span>window.addEventListener('resize', resizeCanvas);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffa500', '#8a2be2'];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>class Confetti {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>constructor(x, y) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.x = x;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.y = y;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.color = colors[Math.floor(Math.random() * colors.length)];</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.size = Math.random() * 10 + 5;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.speedY = -Math.random() * 3 - 3;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.speedX = Math.random() * 6 - 3;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.angle = Math.random() * 360;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.spin = Math.random() * 0.2 - 0.1;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.shape = Math.random() &lt; 0.5 ? 'circle' : 'rectangle';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.opacity = 1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>update() {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.y += this.speedY;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.x += this.speedX;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.angle += this.spin;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.speedY += 0.1;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.opacity -= 0.02;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.opacity = Math.max(0, this.opacity);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>draw() {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>ctx.save();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>ctx.translate(this.x, this.y);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>ctx.rotate(this.angle * Math.PI / 180);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillStyle = this.color;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>ctx.globalAlpha = this.opacity;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (this.shape === 'circle') {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>ctx.beginPath();</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fill();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>ctx.restore();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>let confetti = [];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function createConfetti() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; 200; i++) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>confetti.push(new Confetti(Math.random() * confettiCanvas.width, confettiCanvas.height));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function animateConfetti() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>confetti.forEach((c, index) =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>c.update();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>c.draw();</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (c.opacity &lt;= 0 || c.y &gt; confettiCanvas.height) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>confetti.splice(index, 1);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (confetti.length &gt; 0) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>requestAnimationFrame(animateConfetti);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>revealButton.addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>answerInput.value = '是你呀，bb!';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>createConfetti();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animateConfetti();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>revealButton.style.transform = 'scale(1.1)';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>revealButton.style.transform = 'scale(1)';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}, 200);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="container">
+        <canvas id="confettiCanvas"></canvas>
+        <h1>谁是世界上最好看的女生？</h1>
+        <input type="text" id="answerInput" placeholder="答案将在这里显示" readonly>
+        <button id="revealButton">揭晓答案</button>
+    </div>
+
+    <script>
+        const answerInput = document.getElementById('answerInput');
+        const revealButton = document.getElementById('revealButton');
+        const confettiCanvas = document.getElementById('confettiCanvas');
+        const ctx = confettiCanvas.getContext('2d');
+
+        function resizeCanvas() {
+            confettiCanvas.width = confettiCanvas.offsetWidth;
+            confettiCanvas.height = confettiCanvas.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffa500', '#8a2be2'];
+
+        class Confetti {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+                this.size = Math.random() * 10 + 5;
+                this.speedY = -Math.random() * 3 - 3;
+                this.speedX = Math.random() * 6 - 3;
+                this.angle = Math.random() * 360;
+                this.spin = Math.random() * 0.2 - 0.1;
+                this.shape = Math.random() < 0.5 ? 'circle' : 'rectangle';
+                this.opacity = 1;
+            }
+
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX;
+                this.angle += this.spin;
+                this.speedY += 0.1;
+                this.opacity -= 0.02;
+                this.opacity = Math.max(0, this.opacity);
+            }
+
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle * Math.PI / 180);
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = this.opacity;
+                if (this.shape === 'circle') {
+                    ctx.beginPath();
+                    ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
+                }
+                ctx.restore();
+            }
+        }
+
+        let confetti = [];
+
+        function createConfetti() {
+            for (let i = 0; i < 200; i++) {
+                confetti.push(new Confetti(Math.random() * confettiCanvas.width, confettiCanvas.height));
+            }
+        }
+
+        function animateConfetti() {
+            ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            confetti.forEach((c, index) => {
+                c.update();
+                c.draw();
+                if (c.opacity <= 0 || c.y > confettiCanvas.height) {
+                    confetti.splice(index, 1);
+                }
+            });
+            if (confetti.length > 0) {
+                requestAnimationFrame(animateConfetti);
+            }
+        }
+
+        revealButton.addEventListener('click', () => {
+            answerInput.value = '是你呀，bb!';
+            createConfetti();
+            animateConfetti();
+            revealButton.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                revealButton.style.transform = 'scale(1)';
+            }, 200);
+        });
+    </script>
 </body>
-</html>
+</html>nano index.html
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谁是世界上最好看的女生？</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+        #answerInput {
+            width: calc(100% - 2rem);
+            padding: 0.75rem 1rem;
+            margin-bottom: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        #answerInput:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        #revealButton {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #revealButton:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        #confettiCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="confettiCanvas"></canvas>
+        <h1>谁是世界上最好看的女生？</h1>
+        <input type="text" id="answerInput" placeholder="答案将在这里显示" readonly>
+        <button id="revealButton">揭晓答案</button>
+    </div>
+
+    <script>
+        const answerInput = document.getElementById('answerInput');
+        const revealButton = document.getElementById('revealButton');
+        const confettiCanvas = document.getElementById('confettiCanvas');
+        const ctx = confettiCanvas.getContext('2d');
+
+        function resizeCanvas() {
+            confettiCanvas.width = confettiCanvas.offsetWidth;
+            confettiCanvas.height = confettiCanvas.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffa500', '#8a2be2'];
+
+        class Confetti {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+                this.size = Math.random() * 10 + 5;
+                this.speedY = -Math.random() * 3 - 3;
+                this.speedX = Math.random() * 6 - 3;
+                this.angle = Math.random() * 360;
+                this.spin = Math.random() * 0.2 - 0.1;
+                this.shape = Math.random() < 0.5 ? 'circle' : 'rectangle';
+                this.opacity = 1;
+            }
+
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX;
+                this.angle += this.spin;
+                this.speedY += 0.1;
+                this.opacity -= 0.02;
+                this.opacity = Math.max(0, this.opacity);
+            }
+
+            draw() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle * Math.PI / 180);
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = this.opacity;
+                if (this.shape === 'circle') {
+                    ctx.beginPath();
+                    ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);
+                }
+                ctx.restore();
+            }
+        }
+
+        let confetti = [];
+
+        function createConfetti() {
+            for (let i = 0; i < 200; i++) {
+                confetti.push(new Confetti(Math.random() * confettiCanvas.width, confettiCanvas.height));
+            }
+        }
+
+        function animateConfetti() {
+            ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+            confetti.forEach((c, index) => {
+                c.update();
+                c.draw();
+                if (c.opacity <= 0 || c.y > confettiCanvas.height) {
+                    confetti.splice(index, 1);
+                }
+            });
+            if (confetti.length > 0) {
+                requestAnimationFrame(animateConfetti);
+            }
+        }
+
+        revealButton.addEventListener('click', () => {
+            answerInput.value = '是你呀，bb!';
+            createConfetti();
+            animateConfetti();
+            revealButton.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                revealButton.style.transform = 'scale(1)';
+            }, 200);
+        });
+    </script>
+</body>
+</html>y
+
+
