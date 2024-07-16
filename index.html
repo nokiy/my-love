@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;谁是世界上最好看的女生？&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body, html {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Helvetica Neue', Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 30px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#answerInput {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: calc(100% - 2rem);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #e0e0e0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: border-color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#answerInput:focus {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #3498db;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#revealButton {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #3498db;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.75rem 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#revealButton:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #2980b9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>#confettiCanvas {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;canvas id="confettiCanvas"&gt;&lt;/canvas&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;谁是世界上最好看的女生？&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="answerInput" placeholder="答案将在这里显示" readonly&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="revealButton"&gt;揭晓答案&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const answerInput = document.getElementById('answerInput');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const revealButton = document.getElementById('revealButton');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const confettiCanvas = document.getElementById('confettiCanvas');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const ctx = confettiCanvas.getContext('2d');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function resizeCanvas() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confettiCanvas.width = confettiCanvas.offsetWidth;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confettiCanvas.height = confettiCanvas.offsetHeight;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>resizeCanvas();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.addEventListener('resize', resizeCanvas);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffa500', '#8a2be2'];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>class Confetti {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>constructor(x, y) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.x = x;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.y = y;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.color = colors[Math.floor(Math.random() * colors.length)];</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.size = Math.random() * 10 + 5;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.speedY = -Math.random() * 3 - 3;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.speedX = Math.random() * 6 - 3;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.angle = Math.random() * 360;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.spin = Math.random() * 0.2 - 0.1;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.shape = Math.random() &lt; 0.5 ? 'circle' : 'rectangle';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.opacity = 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>update() {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.y += this.speedY;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.x += this.speedX;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.angle += this.spin;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.speedY += 0.1;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.opacity -= 0.02;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>this.opacity = Math.max(0, this.opacity);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>draw() {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.save();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.translate(this.x, this.y);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.rotate(this.angle * Math.PI / 180);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.fillStyle = this.color;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.globalAlpha = this.opacity;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (this.shape === 'circle') {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.beginPath();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fill();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>ctx.fillRect(-this.size / 2, -this.size / 2, this.size, this.size);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>ctx.restore();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>let confetti = [];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function createConfetti() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; 200; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>confetti.push(new Confetti(Math.random() * confettiCanvas.width, confettiCanvas.height));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function animateConfetti() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confetti.forEach((c, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>c.update();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>c.draw();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (c.opacity &lt;= 0 || c.y &gt; confettiCanvas.height) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>confetti.splice(index, 1);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (confetti.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>requestAnimationFrame(animateConfetti);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>revealButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>answerInput.value = '是你呀，bb!';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>createConfetti();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animateConfetti();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>revealButton.style.transform = 'scale(1.1)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>revealButton.style.transform = 'scale(1)';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, 200);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
